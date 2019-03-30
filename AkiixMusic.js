@@ -18,7 +18,7 @@ const activities_list = [
 client.on('ready', () => {
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
-        client.user.SetActivity(activities_list[index]);
+        client.user.setPresence(activities_list[index]);
     }, 10000);
 });
 
